@@ -1,0 +1,93 @@
+/* Características tipográficas globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Classe para a logotipo */
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+/* Formatação das áreas semânticas */
+
+/* Cabeçalho */
+header {
+    background-color: #f8f9fa;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Menu de Navegação */
+nav {
+    background-color: #343a40;
+}
+
+nav .navbar-nav .nav-item .nav-link {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+nav .navbar-nav .nav-item .nav-link:hover {
+    color: #ffc107;
+}
+
+/* Conteúdo Principal */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+main section {
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Rodapé */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Flexbox para melhor visualização */
+
+/* Ajustando cabeçalho e conteúdo */
+.container-fluid,
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .container {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    main {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas Culinárias</title>
+    <!-- Incluindo CSS -->
+    <link rel="stylesheet" href="formatos.css">
+    <link rel="stylesheet" href="receitas.css">
+</head>
+<body>
+
+    <!-- Cabeçalho do Site -->
+    <header class="container-fluid bg-light py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <img src="imagens/logotipo.png" alt="Logotipo do Site" class="logo">
+            <h1 class="text-primary">Receitas Culinárias</h1>
+        </div>
+    </header>
+
+    <!-- Menu de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="receitas.html">Receitas</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="cadastro.html">Cadastro</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main class="container my-5">
+        <section class="receitas-container">
+            <h2 class="text-center">Receitas Populares</h2>
+            <div class="receitas-grid">
+                
+                <!-- Receita 1: Bolo de Cenoura -->
+                <div class="receita">
+                    <h3 class="receita-nome">Receita de Bolo de Cenoura</h3>
+                    <img src="imagens/bolo-cenoura.jpg" alt="Bolo de Cenoura" class="receita-foto">
+                    <div class="receita-itens">
+                        <h4>Ingredientes:</h4>
+                        <ul>
+                            <li>3 cenouras</li>
+                            <li>3 ovos</li>
+                            <li>2 xícaras de farinha de trigo</li>
+                            <li>1 xícara de óleo</li>
+                            <li>1 colher de fermento em pó</li>
+                        </ul>
+                    </div>
+                    <div class="receita-preparo">
+                        <h4>Modo de Preparo:</h4>
+                        <p>Misture todos os ingredientes no liquidificador. Despeje a massa em uma forma e asse a 180°C por 40 minutos.</p>
+                    </div>
+                </div>
+
+                <!-- Receita 2: Lasanha de Carne -->
+                <div class="receita">
+                    <h3 class="receita-nome">Receita de Lasanha de Carne</h3>
+                    <img src="imagens/lasanha.jpg" alt="Lasanha de Carne" class="receita-foto">
+                    <div class="receita-itens">
+                        <h4>Ingredientes:</h4>
+                        <ul>
+                            <li>500g de carne moída</li>
+                            <li>1 pacote de massa para lasanha</li>
+                            <li>500ml de molho de tomate</li>
+                            <li>200g de queijo mussarela</li>
+                            <li>100g de presunto</li>
+                            <li>Sal e temperos a gosto</li>
+                        </ul>
+                    </div>
+                    <div class="receita-preparo">
+                        <h4>Modo de Preparo:</h4>
+                        <p>Cozinhe a carne com temperos e adicione o molho de tomate. Em uma travessa, alterne camadas de massa, carne, queijo e presunto. Repita até terminar. Asse por 30 minutos a 200°C.</p>
+                    </div>
+                </div>
+
+                <!-- Receita 3: Salada de Frutas -->
+                <div class="receita">
+                    <h3 class="receita-nome">Receita de Salada de Frutas</h3>
+                    <img src="imagens/salada-frutas.jpg" alt="Salada de Frutas" class="receita-foto">
+                    <div class="receita-itens">
+                        <h4>Ingredientes:</h4>
+                        <ul>
+                            <li>1 maçã</li>
+                            <li>1 banana</li>
+                            <li>1 laranja</li>
+                            <li>1/2 mamão</li>
+                            <li>1 xícara de uvas</li>
+                            <li>Suco de 1 limão</li>
+                        </ul>
+                    </div>
+                    <div class="receita-preparo">
+                        <h4>Modo de Preparo:</h4>
+                        <p>Pique todas as frutas em cubos e misture em uma tigela. Regue com suco de limão para realçar o sabor. Sirva gelado.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="container-fluid bg-dark text-light py-3 text-center">
+        <p>&copy; 2023 Receitas Culinárias. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

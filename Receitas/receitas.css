@@ -1,0 +1,89 @@
+/* Configurações para o contêiner das receitas */
+.receitas-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* Grade Flexível para as Receitas */
+.receitas-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Painéis das Receitas */
+.receita {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.receita:hover {
+    transform: scale(1.02);
+}
+
+/* Nome da Receita */
+.receita-nome {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+}
+
+/* Foto do Prato */
+.receita-foto {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+/* Lista de Ingredientes */
+.receita-itens h4,
+.receita-preparo h4 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.receita-itens ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+/* Modo de Preparo */
+.receita-preparo p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Barra de Rolagem Vertical para o Conteúdo Principal */
+main {
+    max-height: 80vh;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .receitas-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .receita {
+        width: 90%;
+    }
+}
